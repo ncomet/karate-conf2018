@@ -8,8 +8,8 @@ before_install:
   - docker pull binout/docker-asciidoctor-deckjs
 
 script:
-  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-deckjs binout/docker-asciidoctor-deckjs asciidoctor -a conf=bdxio -T /asciidoctor-backends/haml/deckjs -o /documents/output/slides-bdxio.html slides.adoc
-  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-deckjs binout/docker-asciidoctor-deckjs asciidoctor -a conf=devfesttoulouse -T /asciidoctor-backends/haml/deckjs -o /documents/output/slides-devfesttoulouse.html slides.adoc
+  - docker run --rm -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-deckjs binout/docker-asciidoctor-deckjs asciidoctor -a conf=bdxio -T /asciidoctor-backends/haml/deckjs -o /documents/output/slides-bdxio.html slides.adoc
+  - docker run --rm -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-deckjs binout/docker-asciidoctor-deckjs asciidoctor -a conf=devfesttoulouse -T /asciidoctor-backends/haml/deckjs -o /documents/output/slides-devfesttoulouse.html slides.adoc
 
 after_error:
   - docker logs asciidoc-to-deckjs
