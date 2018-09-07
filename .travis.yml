@@ -8,6 +8,7 @@ before_install:
   - docker pull binout/docker-asciidoctor-deckjs
 
 script:
+  - docker run --rm -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-deckjs binout/docker-asciidoctor-deckjs asciidoctor -a conf=bdxjug -T /asciidoctor-backends/haml/deckjs -o /documents/output/slides-bdxjug.html slides.adoc
   - docker run --rm -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-deckjs binout/docker-asciidoctor-deckjs asciidoctor -a conf=bdxio -T /asciidoctor-backends/haml/deckjs -o /documents/output/slides-bdxio.html slides.adoc
   - docker run --rm -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-deckjs binout/docker-asciidoctor-deckjs asciidoctor -a conf=devfesttoulouse -T /asciidoctor-backends/haml/deckjs -o /documents/output/slides-devfesttoulouse.html slides.adoc
 
@@ -18,6 +19,7 @@ after_failure:
   - docker logs asciidoc-to-deckjs
 
 after_success:
+  - cd output ; sed 's/"\/\/cdnjs/"https:\/\/cdnjs/' slides-bdxjug.html | sed 's/"http:\/\/cdnjs/"https:\/\/cdnjs/' > bdxjug.html ; cp -R ../images images
   - cd output ; sed 's/"\/\/cdnjs/"https:\/\/cdnjs/' slides-bdxio.html | sed 's/"http:\/\/cdnjs/"https:\/\/cdnjs/' > bdxio.html ; cp -R ../images images
   - cd output ; sed 's/"\/\/cdnjs/"https:\/\/cdnjs/' slides-devfesttoulouse.html | sed 's/"http:\/\/cdnjs/"https:\/\/cdnjs/' > devfesttoulouse.html ; cp -R ../images images
   - mkdir deck.js ; curl -LkSs https://github.com/imakewebthings/deck.js/archive/1.1.0.tar.gz | tar xfz - -C deck.js --strip-components=1
