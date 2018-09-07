@@ -9,7 +9,7 @@
 :status: true
 :conf: devfesttoulouse
 
-image::images/${conf}.jpg[float="right"]
+image::images/{conf}.jpg[float="right"]
 
 == Nico et Benoit
 
