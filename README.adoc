@@ -1,5 +1,5 @@
 = Ceinture noire Karate en tests d’API REST
-Tools In Action - Dev Fest Toulouse & BDX I/O 2018
+Conference - Dev Fest Toulouse & BDX I/O & Bordeaux JUG 2018
 
 == Build slides
 
@@ -17,12 +17,13 @@ Pre-requisites:: docker
 
 https://travis-ci.org/ncomet/karate-conf2018
 
-image:https://travis-ci.org/binout/karate-devoxxfr2018.svg?branch=master["Build Status", link="https://travis-ci.org/binout/karate-devoxxfr2018"]
+image:https://travis-ci.org/ncomet/karate-conf2018.svg?branch=master["Build Status", link="https://travis-ci.org/ncomet/karate-conf2018"]
 
 Slides are published with Github Pages : 
 
-* https://binout.github.io/karate-conf2018/bdxio.html
-* https://binout.github.io/karate-conf2018/devfestoutlouse.html
+* https://ncomet.github.io/karate-conf2018/bdxjug.html
+* https://ncomet.github.io/karate-conf2018/devfestoutlouse.html
+* https://ncomet.github.io/karate-conf2018/bdxio.html
 
 NOTE:: Inspired from http://mgreau.com/posts/2016/03/28/asciidoc-to-gh-pages-with-travis-ci-docker-asciidoctor.html
 
