@@ -7,8 +7,9 @@
 :navigation: false
 :goto: true
 :status: true
+:conf: devfesttoulouse
 
-image::images/devoxx.png[float="right"]
+image::images/${conf}.jpg[float="right"]
 
 == Nico et Benoit
 

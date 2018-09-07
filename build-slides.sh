@@ -2,10 +2,16 @@
 mkdir -p output
 
 echo "Generate slides"
-docker run --rm -v $(pwd):/documents/ --name asciidoc-to-deckjs binout/docker-asciidoctor-deckjs asciidoctor -T /asciidoctor-backends/haml/deckjs -D /documents/output slides.adoc
+docker run --rm -v $(pwd):/documents/ --name asciidoc-to-deckjs binout/docker-asciidoctor-deckjs asciidoctor -a conf=bdxio -T /asciidoctor-backends/haml/deckjs -D /documents/output slides.adoc
 
 echo "Copy resources"
-sed 's/"\/\/cdnjs/"https:\/\/cdnjs/'  output/slides.html > output/index.html ; cp -R images output
+sed 's/"\/\/cdnjs/"https:\/\/cdnjs/'  output/slides.html > output/bdxio.html ; cp -R images output
+
+echo "Generate slides"
+docker run --rm -v $(pwd):/documents/ --name asciidoc-to-deckjs binout/docker-asciidoctor-deckjs asciidoctor -a conf=devfesttoulouse -T /asciidoctor-backends/haml/deckjs -D /documents/output slides.adoc
+
+echo "Copy resources"
+sed 's/"\/\/cdnjs/"https:\/\/cdnjs/'  output/slides.html > output/devfesttoulouse.html ; cp -R images output
 
 if [ ! -d "deck.js" ]; then
   echo "Retrieve deck.js"
