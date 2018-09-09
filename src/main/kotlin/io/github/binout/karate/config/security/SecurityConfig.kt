@@ -41,10 +41,11 @@ class SecurityConfig : WebSecurityConfigurerAdapter() {
     override fun configure(http: HttpSecurity?) {
         if (http != null) {
             http.authorizeRequests()
-                    .antMatchers("*/**").anonymous()
+                    .anyRequest().permitAll()
                     .and()
                     .httpBasic()
                     .authenticationEntryPoint(authEntryPoint)
+            http.csrf().disable()
         }
     }
 
