@@ -41,6 +41,7 @@ class SecurityConfig : WebSecurityConfigurerAdapter() {
     override fun configure(http: HttpSecurity?) {
         if (http != null) {
             http.authorizeRequests()
+                    .antMatchers("/secret").authenticated()
                     .anyRequest().permitAll()
                     .and()
                     .httpBasic()

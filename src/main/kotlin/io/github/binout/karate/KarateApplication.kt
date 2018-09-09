@@ -59,3 +59,10 @@ class ActorEndpoint {
     fun allActors() = movies.values.flatMap { it.actors.asIterable() }.distinct()
 }
 
+@RestController
+@RequestMapping("/secret")
+class SecretEndpoint {
+    @GetMapping
+    fun secret() = "The spoon is not real"
+}
+
