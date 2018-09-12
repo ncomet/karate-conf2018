@@ -1,4 +1,4 @@
-Feature: demo with API of cfp.devoxx.fr
+Feature: demo with API of pokeapi.co
 
   Background:
     * url 'https://pokeapi.co/api/v2'
