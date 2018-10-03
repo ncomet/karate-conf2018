@@ -101,7 +101,7 @@ icon:github[] https://github.com/intuit/karate (+500 icon:star[])
 icon:twitter[] @KarateDSL
 
 * Février 2017 : 1ère release (`0.1.2`)
-* Mars 2018 : `0.7.0`
+* Juillet 2019 : `0.8.0`
 
 == Hello Cats
 
@@ -111,10 +111,10 @@ image::https://github.com/intuit/karate/raw/master/karate-demo/src/test/resource
 
 image::images/start-demo.png[]
 
-.Testing `https://cfp.devoxx.fr/`
+.Testing `https://pokeapi.co/api/v2`
 [source]
 ----
-java -jar karate.jar -t cfp-speaker.feature
+java -jar karate.jar -t pokemon.feature
 ----
 
 == Tests avec Karate
@@ -153,6 +153,6 @@ image::images/kick-pain.gif[float="right"]
 
 image::images/salute.gif[salute, 640]
 
-Le code et les slides : icon:github[]/binout/karate-devoxxfr2018
+Le code et les slides : icon:github[]/ncomet/karate-conf2018
 
-image::images/qrcode.jpg[]
+image::images/qrcode.png[]
