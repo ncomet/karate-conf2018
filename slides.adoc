@@ -150,7 +150,8 @@ image::images/kick-pain.gif[float="right"]
 
 Utilisation des `.feature` comme source de scénario Gatling
 
-image:images/chunli.gif[] image:images/gatling.gif[]
+image:images/chunli.gif[float=left]
+image:images/gatling.gif[float=right]
 
 == Travaux futurs
 
