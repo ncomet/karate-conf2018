@@ -96,7 +96,7 @@ image::images/karate-logo.svg[float="right"]
 [quote, Peter Thomas (Intuit)]
 Web-Services Testing Made Simple.
 
-icon:github[] https://github.com/intuit/karate (+500 icon:star[])
+icon:github[] https://github.com/intuit/karate (+1000 icon:star[])
 
 icon:twitter[] @KarateDSL
 
@@ -148,9 +148,24 @@ image::images/kick-pain.gif[float="right"]
 
 == Gatling
 
-Utilisation des `.feature` dans Gatling
+Utilisation des `.feature` comme source de scénario Gatling
 
 image:images/chunli.gif[] image:images/gatling.gif[]
+
+== Travaux futurs
+
+++++
+<div style="display:flex; justify-content: space-evenly;">
+<div>
+<blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr"><a href="https://twitter.com/KarateDSL?ref_src=twsrc%5Etfw">@KarateDSL</a> as a UI automation framework ? <br><br>I think this may *actually* work ! <a href="https://t.co/6j47L3kLQo">pic.twitter.com/6j47L3kLQo</a></p>&mdash; Peter Thomas (@ptrthomas) <a href="https://twitter.com/ptrthomas/status/1044069611082305537?ref_src=twsrc%5Etfw">24 septembre 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div>
+<blockquote class="twitter-tweet" data-lang="fr"><p lang="en" dir="ltr">working through the &quot;Cucumber Exit&quot; for <a href="https://twitter.com/KarateDSL?ref_src=twsrc%5Etfw">@KarateDSL</a> code-named CUKEXIT :P<a href="https://t.co/fao8Fn5qRM">https://t.co/fao8Fn5qRM</a></p>&mdash; Peter Thomas (@ptrthomas) <a href="https://twitter.com/ptrthomas/status/1023612849418108929?ref_src=twsrc%5Etfw">29 juillet 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+++++
 
 == Questions ?
 
