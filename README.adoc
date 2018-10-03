@@ -36,3 +36,14 @@ TIP:: Use `export-slides-pdf.sh` script to export online slides to PDF
 ./mvnw verify
 ----
 
+== Run Gatling test
+
+Start the server and then :
+
+[source]
+----
+./mvnw test-compile gatling:test
+----
+
+Reports are available in `target/gatling` folder.
+
