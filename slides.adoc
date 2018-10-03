@@ -101,7 +101,7 @@ icon:github[] https://github.com/intuit/karate (+500 icon:star[])
 icon:twitter[] @KarateDSL
 
 * Février 2017 : 1ère release (`0.1.2`)
-* Juillet 2019 : `0.8.0`
+* Juillet 2018 : `0.8.0`
 
 == Hello Cats
 
