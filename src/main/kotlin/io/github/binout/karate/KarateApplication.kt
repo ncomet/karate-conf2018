@@ -56,7 +56,7 @@ class MovieEndpoint {
 @RequestMapping("/actors")
 class ActorEndpoint {
     @GetMapping
-    fun allActors() = movies.values.flatMap { it.actors.asIterable() }.distinct()
+    fun allActors() = movies.values.flatMap { it.actors }.distinct()
 }
 
 @RestController
