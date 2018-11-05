@@ -136,6 +136,19 @@ image::images/demo.gif[]
 
 image::images/documentation.png[]
 
+== Retour d'expérience
+
+👍
+
+* Plus de 70 features pour 139 endpoints couverts
+* ⏱ < 1 min en IC
+* Intégration à l'IDE
+
+⚠️
+
+* Compatibilité javascript limitée (🦏 Nashorn)
+* 💥 _Breaking change_ lors des montées de version
+
 == Pour aller plus loin
 
 image::images/kick-pain.gif[float="right"]
@@ -168,7 +181,14 @@ image:images/gatling.gif[float=right]
 </div>
 ++++
 
+
+ifeval::["{conf}" == "devfesttoulouse"]
+== Merci
+endif::[]
+
+ifeval::["{conf}" != "devfesttoulouse"]
 == Questions ?
+endif::[]
 
 image::images/salute.gif[salute, 640]
 
